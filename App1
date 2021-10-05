@@ -1,0 +1,26 @@
+package main;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		BoxObject ob =  new BoxObject(100);
+		System.out.println(ob.value);
+		
+		BoxObject ob1 =  new BoxObject("Hello");
+		System.out.println(ob1.value);
+		
+		BoxObject ob2 = new BoxObject(0.6f);
+		System.out.println(ob2.value);
+    	}
+
+}
+class BoxObject {
+	
+	Object value;
+	
+	public BoxObject (Object value) {
+		
+		this.value = value;
+	}
+}
