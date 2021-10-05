@@ -1,0 +1,38 @@
+package main;
+
+public class App {
+
+	public static void main(String[] args) {
+  
+      BoxInt ib = new BoxInt(100); System.out.println(ib.value);
+		  
+		  BoxFloat fb = new BoxFloat(0.6f); System.out.println(fb.value);
+		  
+		  BoxString sb = new BoxString("Hello"); System.out.println(sb.value);
+		 
+	}
+
+}
+
+class BoxInt {
+ 
+ int value;
+ 
+ public BoxInt(int value) { this.value = value; } }
+ 
+ class BoxFloat {
+ 
+ float value;
+ 
+ public BoxFloat(float value) { this.value = value; }
+ 
+ }
+ 
+ class BoxString {
+ 
+ String value;
+ 
+ public BoxString(String value) { this.value = value; }
+ 
+}
+		
