@@ -9,9 +9,14 @@ public class AppGenerics {
 		db.setValue(0.6);
 		Box <String> sb = new Box<>();
 		sb.setValue("abc");
+		
+		ib.toString();
+		
+		
 		//System.out.println(ib.getValue());
 		//System.out.println(db.getValue());
 		//System.out.println(sb.getValue());
+
 
 	}
 
@@ -36,7 +41,12 @@ public void setValue(T value) {
 	this.value = value;
 }
 
-public T toString() {
-   return value;
+
+
+
+public  <T> void toString( ) {
+	
+	System.out.println(this.getValue());
+	    
 }
 }
