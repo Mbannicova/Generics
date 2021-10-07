@@ -10,43 +10,33 @@ public class AppGenerics {
 		Box <String> sb = new Box<>();
 		sb.setValue("abc");
 		
-		ib.toString();
+		System.out.println(ib.toString());
+        System.out.println(db.toString());
+        System.out.println(sb.toString());
 		
-		
-		//System.out.println(ib.getValue());
-		//System.out.println(db.getValue());
-		//System.out.println(sb.getValue());
-
-
-	}
+		}
 
 }
 
 class Box <T> {
+	
 	private T value;
 	
-Box (T value) {
-	this.setValue(value);
-}
-
 public Box() {
 	
-}
-
-public T getValue() {
-	return value;
 }
 
 public void setValue(T value) {
 	this.value = value;
 }
 
-
-
-
-public  <T> void toString( ) {
+private String getValue(){ 
 	
-	System.out.println(this.getValue());
-	    
+	return this.value.toString();
+	
+	}
+
+public String toString(){
+    return this.getValue();
 }
 }
